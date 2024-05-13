@@ -1,0 +1,20 @@
+{
+  "name": "mail-sevices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Index.js",
+  "scripts": {
+    "start": "node Index.js",
+    "dev": "nodemon Index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3",
+    "userData": "^6.9.7",
+    "nodemon": "^3.0.2"
+  }
+}
