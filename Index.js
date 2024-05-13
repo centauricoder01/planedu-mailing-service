@@ -35,8 +35,6 @@ app.post("/mail", (req, res) => {
       address: fromemail,
     },
     to: "cityeduguide@gmail.com",
-    // to: "rajendrapateljobs@gmail.com",
-    // to: "narendraplanedu@gmail.com",
     subject: college,
     html: `<table width='60%' style='border:1px solid black;'>
                   <th style='background-color:#0051A4;color:#FFFFFF;text-align: center;'>Description</th>
