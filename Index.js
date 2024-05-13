@@ -16,6 +16,10 @@ app.get("/", (req, res) => {
   res.send("welcome Back sir...");
 });
 
+app.get("/check", (req, res) => {
+  res.send("Let me check, if it is correct");
+});
+
 // MAIL PART
 
 app.post("/mail", (req, res) => {
