@@ -1,5 +1,4 @@
 const express = require("express");
-const { connection } = require("./Config/db");
 require("dotenv").config();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
@@ -85,11 +84,8 @@ app.post("/mail", (req, res) => {
 
 app.listen(process.env.PORT, async () => {
   try {
-    await connection;
-    console.log("Connected to DB");
+    console.log(`Listening at port ${process.env.port}`);
   } catch (error) {
-    console.log("Unable to connect to DB");
     console.log(error);
   }
-  console.log(`Listening at port ${process.env.port}`);
 });
